@@ -1,0 +1,4 @@
+App\Entity\Message:
+  message_{1..100}:
+    name: <name()>
+    text: <text()>

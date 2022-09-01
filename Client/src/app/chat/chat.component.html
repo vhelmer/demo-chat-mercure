@@ -1,0 +1,18 @@
+
+<div class="chat-box">
+    <div class="message" *ngFor="let message of messages">
+        <mat-card>
+            <mat-card-title>{{ message.name }}</mat-card-title>
+            <mat-card-subtitle>{{ message.createdAt | date : "HH:mm"}}</mat-card-subtitle>
+            <mat-card-content>{{ message.text }}</mat-card-content>
+        </mat-card>
+    </div>
+
+</div>
+<form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Type a message</mat-label>
+        <textarea matInput formControlName="text"></textarea>
+    </mat-form-field>
+    <button [disabled]="!messageForm.valid" mat-raised-button color="primary" >Submit</button>
+</form>

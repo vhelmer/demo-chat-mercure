@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.chat-container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+}
+
+.chat-box {
+  min-height: 200px;
+  overflow-y: scroll;
+  height: 60%;
+  padding: 20px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.message {
+  padding-top: 10px;
+}

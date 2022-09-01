@@ -1,0 +1,13 @@
+
+<h1 mat-dialog-title>Join the chat</h1>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+<div mat-dialog-content>
+    <mat-form-field appearance="fill">
+        <mat-label>Username</mat-label>
+        <input matInput formControlName="name">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button [disabled]="!loginForm.valid" mat-raised-button color="primary" >Join</button>
+</div>
+</form>
