@@ -11,7 +11,8 @@ Installation
 1. If not already done, [install Docker Compose](https://docs.docker.com/compose/install/)
 2. Run `docker-compose build`
 3. Run `docker-compose run webapp composer install`
-4. Run `docker-compose run node npm install && ng build`
-5. Run `docker-compose up -d`
-6. Run `docker-compose exec webapp bin/console doctrine:migrations:migrate`
-7. Open `http://localhost` in your favorite web browser
+4. Run `docker-compose run node npm install`
+5. Run `docker-compose run node ng build`
+6. Run `docker-compose up -d`
+7. Run `docker-compose exec webapp bin/console doctrine:migrations:migrate`
+8. Open `http://localhost` in your favorite web browser
